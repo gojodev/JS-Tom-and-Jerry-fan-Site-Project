@@ -1,0 +1,329 @@
+/* Emmanuel Koledoye - Comp1C-Y */
+/* 
+Tom and jerry color scheme:
+https://www.schemecolor.com/tom-and-jerry.php 
+*/
+body {
+    background-color: #808990;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    width: auto;
+}
+
+* {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth;
+    position: relative;
+}
+
+.info-container {
+    text-align: center;
+    border: 10px solid black;
+    width: 95%;
+    margin: auto;
+    padding: 10px;
+    display: block;
+    background-color: white;
+    font-size: 1.5rem;
+    border-radius: 50px;
+    background-image: linear-gradient(white, white, grey);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#main {
+    top: 0px;
+    width: 60%;
+    float: right;
+    height: auto;
+}
+
+#main::after {
+    display: flex;
+    clear: both;
+    content: "";
+}
+
+#nav-container {
+    top: 0;
+    float: left;
+    width: 35%;
+    height: auto;
+}
+
+#welcome {
+    top: 5px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #C08129;
+    color: white;
+    border: 2px solid #808990;
+    margin: auto;
+    padding-left: 20px;
+    font-size: 2rem;
+    width: 90%;
+    margin: auto;
+    transition: 0.2s;
+    border-radius: 40px;
+    z-index: 10;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#logo {
+    width: 11vw;
+    height: 11vh;
+    display: inline;
+}
+
+#welcome_text {
+    color: white;
+    width: auto;
+    margin: auto;
+    font-size: 2rem;
+}
+
+#nav-bar {
+    background-color: #C08129;
+}
+
+.headings {
+    font-size: 2rem;
+    color: #D52332;
+    width: 80%;
+    font-weight: bold;
+    text-align: center;
+    margin: auto;
+    transition: 0.2s;
+}
+
+.headings:hover {
+    color: #C08129;
+}
+
+input {
+    font-size: 1.5rem;
+    color: white;
+    background-color: #808990;
+    border-radius: 20px;
+    transition: 0.2s;
+    width: auto;
+}
+
+input:hover {
+    color: white;
+    background-color: #808990;
+}
+
+input:active {
+    background-color: #C08129;
+}
+
+.back-to-top {
+    cursor: pointer;
+    background-color: #C08129;
+    font-size: 1.5rem;
+    color: white;
+    padding: 10px;
+    border-radius: 20px;
+    border: 5px solid black;
+    transition: 0.2s;
+    width: auto;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.back-to-top:hover {
+    color: #C08129;
+    background-color: white;
+    border: 5px solid #C08129;
+}
+
+#fav_character_output {
+    color: #D52332;
+    transition: 0.2s;
+}
+
+#fav_character_output:hover {
+    color: black;
+    font-size: 1.75rem;
+}
+
+hr {
+    width: 80%;
+}
+
+#question_mark {
+    transition: 0.2s;
+}
+
+#question_mark:hover {
+    color: #C08129;
+}
+
+#question_mark:active {
+    color: #D52332;
+}
+
+#game-container {
+    background-image: linear-gradient(white, black);
+    font-size: 1.5rem;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 20px;
+    border: 5px solid black;
+    transition: 0.2s;
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    height: 30vh;
+}
+
+#char_img {
+    height: 200px;
+    width: 200px;
+    border: white 5px solid;
+    border-radius: 20px;
+    transition: 0.2s;
+}
+
+#char_img:hover {
+    opacity: 0.7;
+}
+
+#brief-bio-title {
+    color: #D52332;
+    font-weight: bold;
+}
+
+#brief-bio-desc {
+    text-align: center;
+    color: white;
+    transition: 0.2s;
+}
+
+#char_img_container {
+    text-align: left;
+    margin: auto;
+}
+
+#game-table {
+    margin: auto;
+    width: 80%;
+}
+
+footer {
+    margin-top: 2rem;
+    text-align: right;
+}
+
+footer span {
+    color: black;
+    font-size: 1.5rem;
+    transition: color, 0.2s;
+}
+
+footer span:hover {
+    color: white;
+}
+
+#sub-menu {
+    margin: auto;
+    width: 60%;
+    padding: 20px;
+    color: black;
+    border: 5px solid black;
+    border-radius: 20px;
+    background-image: linear-gradient(white, grey);
+    color: white;
+    visibility: visible;
+    transition: 0.2s;
+}
+
+.title-drop-down:hover {
+    color: white;
+    background-color: #D52332;
+}
+
+.title-drop-down:active {
+    color: #D52332;
+    background-color: white;
+    border: 5px solid black;
+}
+
+.nav-links {
+    color: white;
+    margin: 5px;
+    font-size: 1.5rem;
+    background-color: black;
+    border: 5px solid white;
+    border-radius: 20px;
+    width: auto;
+    display: inline-block;
+    padding: 20px;
+    transition: 0.2s;
+}
+
+.nav-links:hover {
+    color: black;
+    background-color: white;
+    border: 5px solid black;
+}
+
+.nav-links:active {
+    color: white;
+    background-color: grey;
+    border: 5px solid red;
+}
+
+#rating-value {
+    color: #D52332;
+}
+
+#rating-title, #rating-value, #rating-text {
+    text-align: center;
+    margin: 0;
+}
+
+#rating {
+    width: 50%;
+}
+
+#rating-container::before {
+    content: "1";
+    font-size: 1.5rem;
+}
+
+#rating-container::after {
+    content: "10";
+    font-size: 1.5rem;
+}
+
+#rating-text {
+    color: #D52332;
+}
+
+#img-change {
+    border-radius: 20px;
+    width: 70%;
+    height: 250px;
+    border: 5px solid black;
+}
+
+#img-change:hover {
+    opacity: 0.7;
+}
+
+a:visited {
+    color: orange;
+}

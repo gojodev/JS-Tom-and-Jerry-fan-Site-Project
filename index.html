@@ -1,0 +1,116 @@
+<!-- Emmanuel Koledoye - Comp1C-Y -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="author" content="Emmanuel Koledoye">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tom & Jerry - Game</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div id="welcome">
+        <img src="images/logo.png" alt="logo" id="logo">
+        <span id="welcome_text">
+            Welcome to the Tom and Jerry game!
+        </span>
+    </div>
+    <br>
+    <div id="nav-container">
+        <div class="info-container">
+            <button onclick="nav_drop_down()" class="back-to-top title-drop-down"> Navigation </button>
+            <br>
+            <br>
+            <div id="sub-menu">
+                <div class="nav-links">
+                    <a href="https://www.hbomax.com/series/urn:hbo:series:GXoZVkwh6YrLCwgEAAACJ" target="_blank">hbomax.com</a>
+                </div>
+
+                <div class="nav-links">
+                    <a  href="https://en.wikipedia.org/wiki/Tom_and_Jerry#:~:text=Tom%20and%20Jerry%20is%20an,and%20a%20mouse%20named%20Jerry." target="_blank">wikipedia.org</a>
+                </div>
+            </div>
+
+            <br>
+
+            <p id="rating-title">Rate this webpage:</p>
+            <p id="rating-value">10</p>
+            <div id="rating-container">
+                <input onclick="ratings()" type="range" min="1" max="10" value="10" id="rating">
+            </div>
+            <p id="rating-text">What do you think?</p>
+
+            <p>
+                <img onmouseover="img_hover()" alt="images of characters" src="images/logo.png" id="img-change">
+            </p>
+        </div>
+    </div>
+    <div id="main">
+        <div class="info-container">
+            <div class="headings">Who is your favourite "Tom &amp; Jerry" character?</div>
+            <p>
+                <label> Enter your choice here:</label> <input id="fav_character_input">
+            </p>
+
+            <button class="back-to-top" onclick="fav_char()">Submit your Choice</button>
+
+            <p>
+                Your favorite character is: <span id="fav_character_output"> </span>
+            </p>
+
+            <hr>
+
+            <div class="headings">Play the Game!</div>
+
+            <p>
+                Press the Button below to view the brief biography of a character in Tom &amp; Jerry <br>
+                Was your favourite character chosen?
+            </p>
+
+            <p>
+                <i id="question_mark" onclick="game()" class="fa fa-question-circle fa-5x" aria-hidden="true"></i>
+            </p>
+
+            <div id="game-container">
+                <table id="game-table">
+                    <tr>
+                        <td>
+                            <div id="brief-bio-desc">
+                                <span id="brief-bio-title"> Brief BioGraphy </span> <br>
+                                Name: <span id="char_name"> ? </span> <br>
+                                Weight: <span id="char_weight"> ? </span> <br>
+                                Height: <span id="char_height"> ? </span> <br>
+                            </div>
+                        </td>
+
+                        <td>
+                            <div id="char_img_container">
+                                <img alt="character image" src="images/logo.png" id="char_img">
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <footer>
+            <span>
+                &copy; 2022 - Emmanuel Koledoye
+            </span>
+        </footer>
+
+    </div>
+    <script src="home.js"></script>
+</body>
+</html>
+
+<!-- 
+    References:
+    Image of tom: https://knowyourmeme.com/memes/shrugging-tom
+    Image of jerry: https://www.meme-arsenal.com/en/create/meme/1089353
+    image of spike: https://faces-and-morefaces.tumblr.com/post/185491555858
+ -->
